@@ -1,17 +1,17 @@
 #include "CppUTest/TestHarness.h"
 #include "CppUTestExt/MockSupport.h"
-#include "ConnectionChecker.h"
+#include "../src/ConnectionChecker.h"
 
 
 TEST_GROUP(ConnectionChecker)
 {
 
     ConnectionChecker *checker;
-    uint32_t *base;
+    uint32_t base;
 
     void setup()
     {
-        checker = new ConnectionChecker(base);
+        checker = new ConnectionChecker(&base);
     }
 
     void teardown()

@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 int *setIoAddress(int base, int offset){
-    int *p = (int *)base + offset;
+    int *p = (int*)base + offset;
     return p;
 }
 
@@ -11,7 +11,7 @@ void io_write(int base, int offset, int data){
     *p = data;
 }
 
-uint32_t io_read(int base, int offset){
+int io_read(int base, int offset){
     int *p = setIoAddress(base, offset);
     return *p;
 }
