@@ -9,6 +9,7 @@ void io_write(int base, int offset, int data){
 }
 
 int io_read(int base, int offset){
+    return 0;
 }
 
 

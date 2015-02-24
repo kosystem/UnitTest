@@ -7,7 +7,7 @@ TEST_GROUP(ConnectionChecker)
 {
 
     ConnectionChecker *checker;
-    uint32_t base;
+    int base;
 
     void setup()
     {

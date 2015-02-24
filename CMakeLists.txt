@@ -9,7 +9,7 @@ include_directories(${PROJECT_SOURCE_DIR}
 aux_source_directory(${PROJECT_SOURCE_DIR} SRC_LIST)
 aux_source_directory(${PROJECT_SOURCE_DIR}/test SRC_LIST)
 aux_source_directory(${PROJECT_SOURCE_DIR}/mock SRC_LIST)
-#aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 
 message("SOURCE: ${SRC_LIST}")
 

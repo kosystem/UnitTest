@@ -1,6 +1,6 @@
 #include "ConnectionChecker.h"
 
-ConnectionChecker::ConnectionChecker(uint32_t *base) {
+ConnectionChecker::ConnectionChecker(int *base) {
     this->base = base;
 }
 
