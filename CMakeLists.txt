@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 include_directories(${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/mock
     ${PROJECT_SOURCE_DIR}/src
+    ${PROJECT_SOURCE_DIR}/src/IO
     #${PROJECT_SOURCE_DIR}/test
     )
 
@@ -23,4 +24,4 @@ target_link_libraries(${PROJECT_NAME}
 set(CMAKE_CXX_FLAGS "-g -Wall -fprofile-arcs -ftest-coverage")
 #set(CPPUTEST_HOME "/home/kazufumi/workspace/cpputest")
 
-add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${PROJECT_NAME})
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${PROJECT_NAME} -c)
